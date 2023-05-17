@@ -1,13 +1,13 @@
-# Algolia Instantsearch block
+# Search Blocks
 
 ## Getting started
 
 ```bash
-% git clone git@github.com:digitalcube/algolia-instantsearch-blocks.git 
-% cd algolia-instantsearch-blocks
-% yarn
-% yarn postinstall
-% yarn start
+% git clone https://github.com/digitalcube/search-blocks.git
+% cd search-blocks
+% npm install
+% npm run postinstall
+% npm start
 ```
 
 ## Start WordPress using wp-env
@@ -16,16 +16,16 @@ We can control a local WordPress by these command.
 
 ```bash
 # Start WordPress
-% yarn wp:start
+% npm run wp:start
 
-# Steop WordPress
-% yarn wp:stop
+# Setup WordPress
+% npm run wp:stop
 
 # Delete WordPress
-% yarn wp:destroy
+% npm run wp:destroy
 
 # Execute WP-CLI on the WordPress container
-% yarn wp:cli help
+% npm run wp:cli help
 ```
 
 ## Release
@@ -34,7 +34,7 @@ We can control a local WordPress by these command.
 % git pull origin main
 % npm version [major|minor|patch]
 # Update the plugin version
-% vim algolia-instantsearch-blocks.php
+% vim search-blocks.php
 # Update changelog
 % vim readme.txt
 % git push origin main --tags
